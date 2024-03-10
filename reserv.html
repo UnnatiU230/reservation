@@ -15,7 +15,7 @@
 
     <div class="navbar">
     <div class="navdiv">
-        <div class="Logo"><img src="te.jpg"  class="yoy"alt=""></div>
+        <a href="index.html">   <img src="te.jpg"  class="yoy"alt=""></a>
         <ul>
             <li><a href="Aboutus.html">About Us<a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -53,27 +53,27 @@
 
         <div class="form-feild">
             <p>Your Name</p>
-            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Name" class="name">
         </div>
 
         <div class="form-feild">
             <p>Your e-mail</p>
-            <input type="text" placeholder="Your e-mail">
+            <input type="text" placeholder="Your e-mail" class="email">
         </div>
 
         <div class="form-feild">
             <p>Date</p>
-            <input type="date">
+            <input type="date" class="date">
         </div>
 
-        <div class="form-feild">
+        <div class="form-feild" >
             <p>Time</p>
-            <input type="time">
+            <input type="time" class="time">
         </div>
 
         <div class="form-feild">
             <p>How many people</p>
-            <select name="select" id="#">
+            <select name="select" class="#">
                 <option value="1">1 person</option>
                 <option value="2">2 persons</option>
                 <option value="3">3 persons</option>
@@ -82,10 +82,27 @@
                 </select>
         </div>
 
-        <button class="btn">Submit</button>
+        <button onclick="validate()"  class="btn">Submit</button>
       
         </form>
 
 
     </div>
 </div>
+<script>
+    function validate(){
+        var Name = document.getElementsByClassName("name");
+        var Email = document.getElementsByClassName("email");
+        var Date = document.getElementsByClassName("date");
+        var time = document.getElementsByClassName("time");
+        var people = document.getElementsByClassName("#");
+
+                
+                 window.location.assign("index.html");
+                 alert("successfully submitted")
+    }
+    
+   
+</script>
+
+</body>

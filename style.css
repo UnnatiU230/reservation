@@ -479,5 +479,18 @@ input,select{
 
 
 
+@media screen and (max-width: 768px) {
+    .navdiv ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .navdiv ul li {
+        margin: 10px 0;
+    }
+}
+
+
+
 
 
